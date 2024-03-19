@@ -126,7 +126,6 @@ body, #main{
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
-    border: 3px solid black;
 }
 
 #minehehe{
