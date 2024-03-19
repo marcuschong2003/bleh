@@ -1,0 +1,145 @@
+:root {
+    --zhusha: #f04620;
+    --zheshi: #68423a;
+    --zhupiao: #FC713E;
+    --wahui: #396172;
+    --touqing: #204a97;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    user-select: none;
+    font: "arial";
+}
+
+body, #main{
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#main{
+    background-color: var(--wahui);
+}
+
+#happybirthday{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+    max-height:50vh;
+    max-width: 80vw;
+}
+
+#text{
+    transform: translate(-50%,-50%);
+    font-family: "arial";
+    pointer-events: none;
+    user-select: none;
+    color: var(--zhusha);
+}
+
+#text,#textdiv{
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+#textdiv{
+    left:50%;
+    top: 70%;
+    padding: 25px 62.5px;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    border: 3px solid var(--zhusha);
+}
+
+#textdiv:hover{
+    background-color: var(--touqing);
+    border: 3px solid var(--touqing);
+}
+
+.content{
+    width: 80vw;
+    height: 80vh;
+    top: 10vh;
+    left: 10vw;
+    position: absolute;
+    background-color: #eee;
+    z-index: 5;
+    display: none;
+}
+
+.content > #close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.content > #author{
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    font-family: "arial";
+    font-size: 20px;
+}
+
+.actualcontent > #caption,#caption2{
+    bottom: 20px;
+    width:100%;
+    text-align: center;
+    left: 5px;
+    position: absolute;
+    font-family: "arial";
+    font-size: 15px;
+}
+
+#timedisplay{
+    font-size: 40px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#next{
+    padding: 10px 10px;
+    background-color: #ddd;
+    bottom: 10px;
+    right: 10px;
+    font-family: "arial";
+}
+
+#next:hover{
+    background-color: var(--touqing);
+    color: white;
+}
+
+.actualcontent,#minehehe{
+    width: 80%;
+    height: 80%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border: 3px solid black;
+}
+
+#minehehe{
+    background-color: white;
+    z-index: 6;
+    display: none;
+}
+
+#pic{
+    height:50vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+}
